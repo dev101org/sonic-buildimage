@@ -8,4 +8,5 @@ ifeq ($(ENABLE_PY2_MODULES), y)
     # Synthetic dependency just to avoid race condition
     $(SWSSSDK_PY3)_DEPENDS += $(SWSSSDK_PY2)
 endif
+$(SWSSSDK_PY3)_TEST = n
 SONIC_PYTHON_WHEELS += $(SWSSSDK_PY3)
